@@ -50,3 +50,13 @@ export const formatCurrentMonth = (currentMonth: string): string => {
 
   return `${months[parseInt(month) - 1]} - ${year}`;
 };
+
+export const calendarDate = (date: Date): Date => {
+  let year = date.getFullYear();
+  let month = date.getMonth();
+  let day = date.getDate() + 1;
+
+  let dayNew = new Date(year, month, day);
+
+  return dayNew;
+};
