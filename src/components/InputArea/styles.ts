@@ -8,11 +8,24 @@ export const Container = styled.div`
   margin: 1.25rem auto;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 export const InputLabel = styled.label`
   flex: 1;
   margin: 0.5rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 `;
 
 export const InputTitle = styled.div`
@@ -45,6 +58,8 @@ export const Button = styled.button`
   background-color: lightblue;
   color: black;
   cursor: pointer;
+  font-weight: bold;
+
   &:hover {
     background-color: blue;
     color: white;

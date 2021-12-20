@@ -8,12 +8,21 @@ export const Container = styled.div`
   margin-top: -40px;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 export const MonthArea = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const MonthArrow = styled.div`
@@ -31,4 +40,8 @@ export const MonthTitle = styled.div`
 export const ResumeArea = styled.div`
   flex: 2;
   display: flex;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
